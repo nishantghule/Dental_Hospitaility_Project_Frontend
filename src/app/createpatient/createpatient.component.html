@@ -1,0 +1,156 @@
+
+  <div id="bg"></div>
+
+<!-- <head>
+  <meta charset="UTF-8">
+  <title>Login page</title>
+  <link rel="stylesheet" href="./style.css">
+
+  
+    <!- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<body>
+  partial:index.partial.html
+  <html lang="en">
+  <body>
+    <div id="form">
+      <div class="container">
+        <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-md-8 col-md-offset-2">
+          <div id="userform">
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              
+              <!-- <li class="active"><a href="#signup" role="tab" data-toggle="tab"> Sign in:</a></li> -->
+        
+              <!-- <li><a href="#login" role="tab" data-toggle="tab"> Dental login: </a></li> -->
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade active in" id="signup">
+                <h2 class="text-uppercase text-center"
+                  style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Welcome To <br><b><u> DENTAL_CARE HOSPITALITY</u> </b><br></h2><br>
+                  <h2>Register for free</h2>
+
+                  <div class="col-xs-12 col-sm-6">
+                    <div class="form-group">
+                      <p
+                        style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium;">
+                        Patient-Id</p>
+                      <label><span class="req"></span> </label>
+                      <input    type="text" class="form-control" id="id" required
+                        placeholder="Enter your firstname" data-validation-required-message="Please enter your name."
+                        autocomplete="off" required [(ngModel)]="patients.id" name="id">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+
+
+                <form id="signup"  (ngSubmit)="onSubmit()">
+                  <div class="row">
+
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <p
+                          style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium;">
+                          First Name</p>
+                        <label><span class="req"></span> </label>
+                        <input  type="text" class="form-control" id="firstname" required
+                          placeholder="Enter your firstname" data-validation-required-message="Please enter your name."
+                          autocomplete="off" required [(ngModel)]="patients.firstname" name="firstname">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+                      <div class="form-group">
+                        <p
+                          style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium;">
+                          Last Name</p>
+                        <label><span class="req"></span> </label>
+                        <input type="text" class="form-control" id="lastname" required
+                          placeholder="Enter your lastname" data-validation-required-message="Please enter your name."
+                          autocomplete="off" required [(ngModel)]="patients.lastname" name="lastname">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+
+
+
+
+                  <div class="form-group">
+                    <br>
+                    <p
+                      style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium;">
+                      Your Email</p>
+                    <label><span class="req"></span> </label>
+                    <input type="email" class="form-control" id="email" required
+                      placeholder="Enter your Current EmailId"
+                      data-validation-required-message="Please enter your email address." autocomplete="off"
+                      required [(ngModel)]="patients.email" name="email">
+                    <p class="help-block text-danger"></p>
+                  </div>
+
+                  <br>
+
+                  <div class="form-group">
+                    <p
+                      style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: medium;">
+                      Mobile_no:</p>
+                    <label><span class="req"></span> </label>
+                    <input type="tel" class="form-control" id="mobile" required
+                      placeholder="Enter your current Mobile no:"
+                      data-validation-required-message="Please enter your phone number." autocomplete="off"
+                      required [(ngModel)]="patients.mobileno" name="mobile">
+                    <p class="help-block text-danger"></p>
+                  </div>
+
+
+                  <div class="mrgn-30-top">
+
+                    <tbody>
+                      <tr *ngfor="let p of dental | async">
+                        <td>{{p.id}}</td>
+                        <td>{{p.firstname}}</td>
+                        <td>{{p.lastname}}</td>
+                        <td>{{p.email}}</td>
+                        <td>{{p.mobileno}}</td>
+                    </tbody>
+
+                    
+                    <button type="submit" (click)="alertMessage()" class="btn btn-larger btn-block" > Register Now: </button>
+                    <button class="btn btn-larger btn-block" routerLink="/Services"> Proceed </button>
+
+                  </div>
+
+                </form>
+              </div>
+              <div class="tab-pane fade in" id="login">
+                <h2 class="text-uppercase text-center"> Log in</h2>
+
+                <form id="login">
+                  <div class="form-group">
+                    <label> Your Email<span class="req">*</span> </label>
+                    <input type="email" class="form-control" id="email" required
+                      data-validation-required-message="Please enter your email address." autocomplete="off">
+                    <p class="help-block text-danger"></p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      /.container
+    </div>
+
+
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    Latest compiled and minified JavaScript
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+  partial
+  <script src="./script.js"></script>
+
+  

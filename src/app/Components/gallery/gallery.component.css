@@ -1,0 +1,15 @@
+/* Gallery */
+
+.gallery_wrapper{
+    /* background-image: url('../assets/images/gallery/gallery-background.png'); */
+     background-image: url('/src/assets/images/gallery/gallery-background.png');
+    
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.gallery_wrapper img{
+    border-radius: .9375rem;
+}

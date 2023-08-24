@@ -1,0 +1,18 @@
+
+/* Blog */
+.blog_wrapper .blog-content{
+    background-color: #3672bc;
+    padding: 2.5rem;
+    border: .0625rem solid  #3672bc ;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+}
+.blog_wrapper .blog-content{
+    background-color: aqua;
+    background: rgb(53, 53, 163);
+    cursor: cell;
+    border-color: transparent;
+    
+}
+.blog_wrapper h3 {
+    color: #222;
+}

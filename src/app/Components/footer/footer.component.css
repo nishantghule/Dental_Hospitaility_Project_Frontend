@@ -1,0 +1,30 @@
+
+/* footer */
+
+.footer_wrapper{
+    background-color: #004cca;
+
+}
+.footer_wrapper h5{
+    color: #fff;
+}
+.footer_wrapper ul{
+    padding: 0;
+}
+.footer_wrapper ul li{
+    margin-bottom: .5rem;
+    list-style: none;
+    font-size: .875rem;
+}
+.footer_wrapper ul li a{
+    color: #fff;
+}
+.footer_wrapper ul li a,
+.footer_wrapper p{
+    color: #fff;
+    font-size: .875rem;
+    padding-left: 1.5rem;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}

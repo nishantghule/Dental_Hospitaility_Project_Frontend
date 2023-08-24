@@ -1,0 +1,323 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Background color */
+    --primary-color: #004caa;
+    --secondary-color: #fc8185;
+    --bg-light-blue: #3672bc;
+    --bg-dark: #666;
+    --bg-white: #fff;
+
+    /* Test Style */
+    --primary-font: 'Roboto Slab', serif;
+    --secondary-font: 'Josefin Sans', sans-serif;
+    --primary-text: #004cca;
+    --secondary-text: #fc8185;
+    --text-white: #fff;
+    --text-black: #222;
+    --text-gray: #666;
+    --text-light: #ddd;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: .375rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #3672bc;
+}
+
+::-webkit-scrollbar-thumb {
+    background: fc8185;
+}
+
+.wrapper {
+    padding: 6.25rem 0;
+}
+
+.main-btn {
+    display: inline-block;
+    border: .0625rem solid #fff;
+    color: #fff;
+    text-align: center;
+    padding: .75rem 1.375rem;
+    font-size: 1rem;
+    background: transparent;
+    text-transform: capitalize;
+    border-radius: .1875rem;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.main-btn:hover {
+    background-color:  #fc8185;
+    border-color:  #fc8185;
+    color: #fff;
+
+}
+
+
+.fill-btn:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color:  #222;
+}
+
+h1 {
+    font-size: 3.875rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    color:white;
+    font-family: var(--secondary-font);
+}
+
+h2 {
+    font-size: 2.875rem;
+    font-weight: 600;
+    color:black;
+    font-family: var(--secondary-font);
+}
+
+h3 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: white;
+    font-family: var(--secondary-font);
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    color: #222;
+    font-family: var(--secondary-font);
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    color:#004cca;
+    margin-bottom: .9375rem;
+    font-family: var(--secondary-font);
+}
+
+h6 {
+    font-size: 0.875rem;
+    font-weight: 300;
+    color:222;
+    margin-bottom: .9375rem;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
+}
+
+p {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.625rem;
+}
+q {
+   color: pink;
+}
+
+.card {
+    border-radius: .625rem;
+    background-color:#fff;
+    box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0, 0, 0/ 8%);
+    padding: 3.75rem 3.125rem 4.6875rem; 
+    -webkit-transition: all .4s;
+    transition: all .4s;
+    border: 10px;
+    margin-left: 80px;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+@keyframes movebounce {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(1.25rem);
+        transform: translateY(1.25rem);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+/* navbar */
+.header-wrapper .aa :hover {
+background-color: #fc8185;
+border-color: #222;
+color: #ddd;
+}
+
+.header-wrapper.navbar {
+    padding: .9375rem 0;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+
+.header-wrapper .navbar-toggler {
+    border: 0;
+    box-shadow: none;
+    color: 222;
+    line-height: 2;
+}
+
+.header-wrapper .nav-item .nav-link {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: rgb(42, 42, 193);
+    display: inline;
+    font-family:#fff;
+}
+
+.header-wrapper .nav-item .nav-link:hover,
+.header-wrapper .nav-item .nav-link:focus {
+    color: palevioletred;
+}
+
+.banner_wrapper {
+    background-image: url('src/assets/images/top-banner-img/Top-banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+
+.banner_wrapper p {
+    max-width: 80%;
+    color:#fff;
+    
+}
+
+.banner_wrapper .top-right-sec {
+    position: relative;
+    background-image: url('src/assets/images/top-banner-img/top-right-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+
+.banner_wrapper .animate-img {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 50%;
+
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 22;
+    
+}
+
+.banner_wrapper .animate-img .aimg1 {
+    left: -5.6875rem;
+    position: absolute;
+    -webkit-animation-name: movebounce;
+    animation-name: movebounce;
+    -webkit-animation-delay: 100ms;
+    animation-delay: 100ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+
+.banner_wrapper .animate-img .aimg2 {
+    margin-left: 5.5rem;
+   
+    -webkit-animation-name: movebounce;
+    animation-name: movebounce;
+    -webkit-animation-delay: 200ms;
+    animation-delay: 200ms;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+} 
+.home .card:hover{
+    -webkit-transform: translateY(-0.625rem);
+    transform: translateY(-0.625rem);
+    
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+    
+    
+}
+.home .icon-box{
+    text-align: center;
+    margin: o auto 2.5rem;
+    
+  
+   
+}
+.home .card:hover{
+    -webkit-transform: translateY(-0.625rem);
+    transform: translateY(-0.625rem);
+    
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+    
+}
+.home .icon-box{
+    text-align: center;
+    margin: o auto 2.5rem;
+  
+   
+}
+.container{
+   
+    margin-left: 20px;
+  
+}
+/* .container col-md-4{
+    /* position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    margin-left: -10px; */
+    /* padding: 2.5rem;
+    border: .0625rem solid #3672bc ;
+    margin: 0 10px;
+    display: flex;
+  justify-content: center; */
+ 

@@ -1,0 +1,24 @@
+<p>patient-details works!</p>
+<h2>PATIENT DETAILS</h2>
+<hr>
+<div *ngIf="patients">
+  <div>
+    <label><b>Patients Id: </b></label> {{patients.id}}
+  </div>
+  <div>
+    <label><b>Patients Firstname: </b></label> {{patients.firstname}}
+  </div>
+  <div>
+    <label><b>Patients lastname: </b></label> {{patients.lastname}}
+  </div>
+  <div>
+    <label><b>Patients Email: </b></label> {{patients.email}}
+  </div>
+  <div>
+    <label><b>Patients Mobile no: </b></label> {{patients.mobileno}}
+  </div>
+  
+</div>
+
+<br>
+<button (click)="list()" class="btn btn-primary"> Revert  Back </button><br>

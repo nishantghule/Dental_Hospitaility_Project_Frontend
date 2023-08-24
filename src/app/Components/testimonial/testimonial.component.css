@@ -1,0 +1,16 @@
+/* Testimonial */
+
+.testimonial_wrapper .card{
+    background-color: rgba(252, 81, 133, .05);
+}
+.testimonial_wrapper h3{
+    color: #222;
+  
+}
+
+.appointment_wrapper{
+    background-image: url('/src/assets/images/appointmnet-bg.jpg');
+background-position: center center;
+background-size:cover;
+background-repeat: no-repeat;  
+}

@@ -1,0 +1,63 @@
+
+/* Services */
+.services_wrapper {
+    background-color: #004cca;
+    background-image: url('/src/assets/images/gallery/gallery-background.png');
+}
+.services_wrapper .card{
+    background-color: white;
+    border: .0625rem solid #3672bc ;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+    padding: 2.5rem;
+}
+.services_wrapper .card:hover{
+    background: #fc8185;
+    cursor: cell;
+    border-color: transparent;
+}
+
+.services_wrapper .card h4,
+.services_wrapper .card p{
+    color:black;
+}
+.services_wrapper .icon-box{
+    margin-bottom: 1.875rem;
+}
+.selectbtn  {
+    /* Button styles */
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .selectbtn:hover {
+    /* Button hover styles */
+    background-color: #45a049;
+  }
+  
+  .selectbtn:active {
+    /* Button active styles */
+    background-color: #3e854f;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .selectbtn:focus {
+    /* Button focus styles */
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.4);
+  }
+  
+  .card .selectbtn {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

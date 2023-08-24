@@ -1,0 +1,9 @@
+
+
+.appointment_wrapper{
+    /* background-image: url('../assets/images/appointmnet-bg.jpg'); */
+    background-image: url('/src/assets/images/appointmnet-bg.jpg');
+background-position: center center;
+background-size:cover;
+background-repeat: no-repeat;  
+}

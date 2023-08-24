@@ -1,0 +1,120 @@
+
+<!-- <img src="https://img.jagranjosh.com/images/2022/March/1932022/World%20oral%20health%20day%20quotes-min.png" alt=""> -->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+    <div class="row">
+        <div class="well col-xs-10 col-sm-10 col-md-6 col-xs-offset-1 col-sm-offset-1 col-md-offset-3">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6">
+                    <address>
+                        <strong style="font-size: large; font-family: Georgia, 'Times New Roman', Times, serif; font-size:x-large;">Dental_Care HOSPITALITY</strong>
+                        <br>
+                        386, Tilak road
+                        <br>
+                        Core Aurangabad, NB 2456
+                        <br>
+                        <abbr title="Enquiry Details" >Contact no: </abbr> (020) - 8545678
+                    </address>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 text-right">
+                    <p style="font-size: large;">
+                        <em style="font-style: normal;">{{ currentDateTime | date:'medium' }}</em>
+                    </p>
+                    <p>
+                        <em>Receipt #: 34522677W</em>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center">
+                    <h1 style="font-size: large; font-family: Georgia, 'Times New Roman', Times, serif; font-size:x-large;"> PAYMENT RECEIPT </h1>
+                </div>
+
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th style="font-size: large;">SERVICE Choosen</th>
+                            <th>#</th>
+                            <th class="text-center" style="font-size: large;">Price</th>
+                            <th class="text-center" style="font-size: large;">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="col-md-9"><em><b>General Check - UP</b></em></td>
+                           <br>
+                        </tr>
+                        <tr> 
+                            <td class="col-md-9"><em> &nbsp; &nbsp; &nbsp; &nbsp; DENTIST Charge : </em></td>
+                            <td class="col-md-1" style="text-align: center"> 1 </td>
+                            <td class="col-md-1 text-center">1500</td>
+                            <td class="col-md-1 text-center">1500</td></tr>
+                        <tr>
+                            <td class="col-md-9"><em> &nbsp; &nbsp; &nbsp; &nbsp; Service Charge </em></td>
+                            <td class="col-md-1" style="text-align: center"> 1 </td>
+                            <td class="col-md-1 text-center">150</td>
+                            <td class="col-md-1 text-center">150</td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-9"><em> &nbsp; &nbsp; &nbsp; &nbsp; Despensary Charge </em></td>
+                            <td class="col-md-1" style="text-align: center"> 1 </td>
+                            <td class="col-md-1 text-center">150</td>
+                            <td class="col-md-1 text-center">150</td>
+                        </tr>
+                        <tr>
+                            <td>   </td>
+                            <td>   </td>
+                            <td class="text-right">
+                            <p>
+                                <strong>C.G.S.T </strong>
+                            </p>
+                            <p>
+                                <strong>S.G.S.T </strong>
+                            </p></td>
+                            <td class="text-center">
+                            <p>
+                                <strong>11.5%</strong>
+                            </p>
+                            <p>
+                                <strong>11.5%</strong>
+                            </p></td>
+                        </tr>
+                        <tr>
+                            <div class="blinking-text">
+                               
+                                <tr style="font-size:x-large; font-family: Georgia, 'Times New Roman', Times, serif;"><b>Appiontment Schedule</b></tr>
+
+                                <p style="font-size: larger;"><u><b>{{ futureDateTime | date:'medium' }}</b></u></p>
+
+
+                                <!-- <h2>Date after adding 2 days:</h2>
+                                <p>{{ futureDate | date:'medium' }}</p>
+                              
+                                <h2>Date and Time after adding 36 hours:</h2>
+                                <p>{{ futureDateTime | date:'medium' }}</p> -->
+
+                               
+
+
+
+                              </div>
+                            <td>   </td>
+                            &nbsp;
+                            <td class="text-right"><h4><strong>Total: </strong></h4></td> 
+                            <td class="text-center text-danger"><h4><strong>Rs:2000/-</strong></h4></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="btn btn-success btn-lg btn-block"  (click)="downloadPdf()">
+                   Thank you... Visit_Again   <span class="glyphicon glyphicon-chevron-right"></span>
+                </button>
+
+                
+            </div>
+        </div>
+    </div>
+    

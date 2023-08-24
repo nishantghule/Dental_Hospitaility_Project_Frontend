@@ -1,0 +1,46 @@
+
+/* Team */
+
+.team_wrapper .card{
+    padding: auto;
+    background-color: whitesmoke;
+   
+    
+}
+.team_wrapper h3 {
+    color: #222
+}
+.team_wrapper .card:hover{
+-webkit-transform: translateY(-0.625rem);
+transform: translateY(-0.625rem);
+box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.8);
+
+}
+
+.team_wrapper .team-info .social-network{
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding:.625rem 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team_wrapper .team-info .social-network li a{
+width: 1.5625rem;
+height: 1.5625rem;
+line-height: 1.5625rem;
+ display: block;
+ border-radius: .3125rem;
+margin: 0 .3125rem;
+font-size:  .75rem;
+background-color: #222;
+color: #fff;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+.team_wrapper .team-info .social-network li a:hover{
+    background-color: fc8185;
+}

@@ -1,0 +1,36 @@
+<p>patientlist works!</p>
+
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        <h2>Patients List</h2>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Patients-Id</th>
+                    <th>Patients-Firstname</th>
+                    <th>Patients-Lastname</th>
+                    <th>Patients-EmailId</th>
+                    <th>Patients-Mobile_no</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let p of patients | async">
+                    <td>{{p.id}}</td>
+                    <td>{{p.firstname}}</td>
+                    <td>{{p.lastname}}</td>
+                    <td>{{p.email}}</td>
+                    <td>{{p.mobileno}}</td>
+
+                    <td>
+                        <button (click)="patientDetails(p.id)" class="btn btn-info" style="margin-left: 10px"> Details </button>
+
+                    
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
